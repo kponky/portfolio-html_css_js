@@ -82,6 +82,10 @@ body{
     border: none;
 
 }
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+
+}
 
 .btn:hover{
     transform: scale(1.05);
@@ -464,13 +468,39 @@ h3.my-profession{
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
-    background : red;
 
  }
 
- .xperience{
-    background: blue;
+ .about .about-me-content h3.title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text--white-900);
+
  }
+
+ .about .about-me-content .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+
+ }
+
+ .about .about-me-content .timeline{
+    background-color: var(--bg--white-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg--white-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+ }
+
+ .about .about-me-content .timeline .timeline-item{
+    position: relative;
+    padding-left: 17px;
+    padding-bottom: 50px; 
+ }
+
+
 
 
 
