@@ -397,6 +397,16 @@ h3.my-profession{
 
  }
 
+ .about .about-me-content .personal-info .buttons{
+    margin-top: 30px;
+ }
+
+ .about .about-me-content .personal-info .buttons .btn{
+    margin-top: 15px;
+    margin-right: 25px;
+
+ }
+
  .about .about-me-content .skills {
     flex: 0 0 40%;
     max-width: 40%;
