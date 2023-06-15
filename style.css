@@ -350,9 +350,41 @@ h3.my-profession{
 .about .about-me-content .about-me-text{
     flex: 0 0 100%;
     max-width: 100%;
-    background-color: red;
 
 }
+
+.about .about-me-content .about-me-text h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text--white-900);
+
+}.about .about-me-content .about-me-text h3 span{
+     color: var(--skin-color);
+
+}
+
+.about .about-me-content .about-me-text p{
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--text--white-700);
+ }
+
+ .about .about-me-content .personal-info{
+    flex: 0 0 60%;
+    max-width: 60%;
+    background-color: red;
+
+ }
+
+ .about .about-me-content .skills {
+    flex: 0 0 40%;
+    max-width: 40%;
+    background-color: blue;
+
+ }
+
+
 
 
 
