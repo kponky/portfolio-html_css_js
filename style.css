@@ -202,12 +202,14 @@ ul{
 
 .side-bar .side-nav{
     margin-top: 50px;
+    /* background: #000; */
 
 }
 
 .side-bar .side-nav li{
     margin-bottom: 20px;
     display: block;
+    
 
 }
 
@@ -223,8 +225,8 @@ ul{
 
 .side-bar .side-nav li a.active{
     color: var(--skin-color);
-
 }
+ 
 .side-bar .side-nav li a i{
     margin-right: 15px;
 }
@@ -651,9 +653,94 @@ h3.my-profession{
 
     .portfolio .portfolio-item-inner .portfolio-img img{
         width: 100%;
+        height: 100%;
         display: block;
 
     }
+
+    /* contact me */
+
+    .contact-title{
+        color: var(--skin-color);
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 20px;
+        display: block;
+}
+
+.contact-sub-title{
+    color: var(--text--white-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+.contact .contact-info-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact .contact-info-item .icon{
+    display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa,.fas{
+    font-size: 25px;
+    color: var(--skin-color);
+}  
+
+.contact .contact-info-item h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text--white-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.contact .contact-info-item p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text--white-700);
+    font-weight: 500;
+
+}
+
+.contact .contact-form{
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+
+.contact .contact-form .col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact .contact-form .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .form-item{
+    margin-bottom: 30px;
+  
+}
+
+.contact .contact-form .form-item .form-control{
+    width: 100%;
+    height: 50%;
+    border-radius: 25px;
+    background: var(--bg--white-100);
+    border: 1px solid var(--bg--white-50);
+    padding: 10px 25px;
+    font-size: 15px;
+    color: var(--text--white-700);
+}
+
+
+
 
 
 
