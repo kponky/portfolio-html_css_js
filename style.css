@@ -203,13 +203,11 @@ ul{
 .side-bar .side-nav{
     margin-top: 50px;
     /* background: #000; */
-
 }
 
 .side-bar .side-nav li{
     margin-bottom: 20px;
     display: block;
-    
 
 }
 
@@ -220,7 +218,6 @@ ul{
     border-bottom: 1px solid var(--bg--white-50);
     color: var(--text--white-900);
     padding: 5px 15px;
-
 }
 
 .side-bar .side-nav li a.active{
@@ -234,7 +231,6 @@ ul{
     min-height: 100vh;
     display: flex;
     color: var(--text--white-900);
-
 }
 
 .home .home-info{
@@ -264,14 +260,12 @@ h3.my-profession{
 
 .typing{
     color: var(--skin-color);
-
 }
 
 .home-info p{
     font-size: 20px;
     margin-bottom: 70px;
     color: var(--text--white-700);
-
 }
 
 .home .home-img {
@@ -315,7 +309,7 @@ h3.my-profession{
 .section-title{
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 .section-title h2{
@@ -378,12 +372,12 @@ h3.my-profession{
 
  .about .about-me-content .personal-info{
     flex: 0 0  60%;
-    max-width:60%;
-    margin-top: 40px;
+    max-width: 60%;
+    margin-top: 50px;
 
  }
  .about .about-me-content .personal-info .info-item{
-    flex: 0 0 50%;
+    flex: 0 0 0%;
     max-width: 50%;
  }
 
@@ -462,8 +456,6 @@ h3.my-profession{
     top: -40px;
     font-weight: 400;
     line-height: 40px;
-
-
  }
 
  .about .about-me-content .education, .xperience{
@@ -737,7 +729,190 @@ h3.my-profession{
     padding: 10px 25px;
     font-size: 15px;
     color: var(--text--white-700);
+    transition: all 0.3s ease;
 }
+
+.contact .contact-form .form-item .form-control:focus{
+    box-shadow: 0 0 20px rgba(48, 46, 76, 0.20);
+}
+
+.contact .contact-form .form-item textarea.form-control{
+    height: 150px;
+
+}
+
+.contact .contact-form .btn{
+    height: 50px;
+    padding: 0 50px ;
+   }
+
+   @media (max-width:1199px)
+   {
+    body{
+        overflow-x: hidden;
+    }
+
+    .container{
+        max-width: 1100px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .side-bar{
+        left: -270px;
+    }
+
+    .main-content{
+        padding-left: 0;
+    }
+
+       
+    .home .home-info{
+        flex: 0 0 55%;
+        max-width: 55%;
+    }
+
+    .home-img::after{
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        right: 10px;
+        bottom: -30px;
+        border-bottom: 10px solid var(--skin-color);
+        border-right: 10px solid var(--skin-color);
+    
+    }
+    
+    .home-img::before{
+        content: '';
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        left: -20px;
+        top: -30px;
+        bottom: -30px;
+        border-top: 10px solid var(--skin-color);
+        border-left: 10px solid var(--skin-color);
+    
+    }
+
+    .about .about-me-content .about-me-text p{
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--text--white-700);
+     }
+    
+     .about .about-me-content .personal-info{
+        flex: 0 0  53%;
+        max-width: 53%;
+        margin-top: 50px;
+    
+     }
+     .about .about-me-content .personal-info .info-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+     }
+    
+     .about .about-me-content .personal-info .info-item p{
+        font-weight: 700;
+        padding: 10px 0;
+        font-size: 16px;
+        color: var(--text--white-900);
+        border-radius: 1px solid var(--bg--white-50); 
+     }
+    
+     .about .about-me-content .skills {
+        flex: 0 0 40%;
+        max-width: 40%;
+        margin-top: 50px;
+    }
+    
+     
+     .about .about-me-content .skills .skills-item h5{
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 50px;
+    }
+    
+     
+     .about .about-me-content .skills .skills-item .progress .progress-in{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        border-radius: 4px;
+        background-color: var(--skin-color);
+    }
+    
+     .about .about-me-content .skills .skills-item .skills-percent{
+        position: absolute;
+        right: 0;
+        color: var(--text--white-900);
+        top: -40px;
+        font-weight: 400;
+        line-height: 40px;
+     }
+
+     
+
+    .about .about-me-content .personal-info .info-item p span{
+        display: block;
+        margin: left 0;
+
+    }
+
+   }
+
+   @media (max-width: 991px){
+   
+    .home .home-img{
+        display: none;
+    }
+
+    .home .home-info{
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+
+    .service .service-item{
+        flex:0 0 50%;
+        max-width: 50%;
+
+    }
+
+    .portfolio .portfolio-item, .contact .contact-info-item  {
+        flex:0 0 50%;
+        max-width: 50%;
+    }
+
+
+   }
+
+   @media (max-width: 767px){
+    .about .about-me-content .personal-info{
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+
+    .about .about-me-content .skills,
+    .about .about-me-content .education,
+    .about .about-me-content .xperience, 
+    .service .service-item, 
+    .portfolio .portfolio-item,
+    .contact .contact-info-item,
+    .contact .contact-form .col-6
+    {
+        flex:0 0 100%;
+        max-width: 100%;
+    }
+
+    
+
+
+   }
+
+
 
 
 
