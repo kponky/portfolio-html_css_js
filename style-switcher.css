@@ -12,9 +12,9 @@
     transform: translateX(100%);
 }
 
-.style-switcher i.i2{
+/* .style-switcher i.i2{
     color: var(--text-white-900);
-} 
+}  */
 
 .style-switcher.open{
     transform: translateX(-25px);
