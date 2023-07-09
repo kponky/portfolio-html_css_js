@@ -377,7 +377,7 @@ h3.my-profession{
 
  }
  .about .about-me-content .personal-info .info-item{
-    flex: 0 0 0%;
+    flex: 0 0 50%;
     max-width: 50%;
  }
 
