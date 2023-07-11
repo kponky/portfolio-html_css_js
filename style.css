@@ -48,11 +48,30 @@ body.dark{
     padding: 0 30px;
     overflow-y: auto;
     overflow-x: hidden;
+    transition: all 0.3s ease;
+
 }
 
 .section.active{
     z-index: 2;
     opacity: 1;
+    animation: slideSection 1s ease;
+}
+
+.section.back-section{
+    z-index: 1;
+
+}
+
+@keyframes slideSection{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+    
 }
 
 .hidden{
@@ -122,6 +141,8 @@ body.dark{
     display: none   ;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
+
 }
 
 .side-bar .side-nav-toggler span{
@@ -131,6 +152,10 @@ body.dark{
     display: inline-block;
     position: relative;
     
+}
+
+.side-bar .side-nav-toggler.open span{
+    background-color: transparent;
 }
 
 .side-bar .side-nav-toggler span::before{
@@ -144,6 +169,11 @@ body.dark{
 
 }
 
+.side-bar .side-nav-toggler.open span::before{
+    transform: rotate(45deg);
+    top: 0;
+}
+
 .side-bar .side-nav-toggler span::after{
     content: '';
     height: 2px;
@@ -153,6 +183,11 @@ body.dark{
     top: 6px;
     left: 0;
 
+}
+
+.side-bar .side-nav-toggler.open span::after{
+    transform: rotate(-45deg);
+    top: 0;
 }
 
 .side-bar{
@@ -168,6 +203,7 @@ body.dark{
     justify-content: center;
     align-items: center;
     border-right: 1.5px solid var(--bg--white-50);
+    transition: all 0.3s ease;
 }
 
 ul{
@@ -775,12 +811,44 @@ h3.my-profession{
         margin: auto;
     }
 
+    .section .container{
+        padding-top: 70px;
+    }
+
     .side-bar{
         left: -270px;
     }
 
-    .main-content{
+    /* .main-content{
         padding-left: 0;
+    } */
+
+    .side-bar.open{
+        left: 0;
+    }
+
+    .side-bar .side-nav-toggler{
+        display: flex;
+        left: 30px;
+    }
+
+    .side-bar .side-nav-toggler.open{
+        left: 300px;
+    }
+
+    .section{
+        left: 0;
+    }
+
+    .section.open{
+        left: 270px;
+
+    }
+
+    .about .about-me-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+
     }
 
        
