@@ -104,3 +104,29 @@ function sideBarSectionTogglerBtn(){
     }
 
 }
+
+
+// send email js
+
+
+let btn = document.getElementById("btn-submit"); 
+btn.addEventListener("click", function(e){
+    e.preventDefault()
+    let name = getElementById("name").value
+    let email = getElementById("email").value
+    let subject = getElementById("subject").value
+    let message = getElementById("message").value
+
+    let body = 'name: '+name + '<br/> email:' + email + '<br/> subject: ' +subject + '<br/> message: '+ message;
+
+    Email.send({
+        SecureToken : " eee9c013-e8b3-4298-b478-af8fe338b5a8",
+        To : 'ikponkedet@gmail.com',
+        From : "ikponkeedet84@gmail.com",
+        Subject : "Contact Message",
+        Body : "body"
+    }).then(
+      message => alert(message)
+    );
+    
+})

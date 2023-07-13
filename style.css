@@ -477,12 +477,13 @@ h3.my-profession{
     font-weight: 600;
     font-size: 16px;
     line-height: 40px;
-    color-scheme: var(--text--white-900);
-    text-transform: capitalize;
+    color: var(--text--white-900);
+    /* color: red; */
+       text-transform: capitalize;
 
  }
 
- .about .about-me-content .skills .skills-item .progress{
+  .about .about-me-content .skills .skills-item .progress{
     background-color: var(--bg--white-50);
     height: 7px;
     border-radius: 4px;
@@ -687,6 +688,8 @@ h3.my-profession{
         max-width: 33.33%;
         margin-bottom: 30px;
     }
+
+      
 
     .portfolio .portfolio-item-inner{
         border: 6px solid var(--bg--white-100);

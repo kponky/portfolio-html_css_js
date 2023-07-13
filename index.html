@@ -39,8 +39,8 @@
                 <li><a href="#home" class="active"><i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
                 <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i>ABOUT</a></li>
                 <li><a href="#services"><i class="fa fa-list" aria-hidden="true"></i>SERVICES</a></li>
-                <li><a href="#portfolio"><i class="fa fa-briefcase" aria-hidden="true"></i>CONTACT</a></li>
-                <li><a href="#contact"><i class="fa fa-comments" aria-hidden="true"></i>PORTFOLIO</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase" aria-hidden="true"></i>PORTFOLIO</a></li>
+                <li><a href="#contact"><i class="fa fa-comments" aria-hidden="true"></i> CONTACT</a></li>
             </ul>
 
         </div>
@@ -107,7 +107,7 @@
                                         </div>
 
                                         <div class="info-item paddings-1">
-                                            <p>website: <span>domain.com</span></p>
+                                            <p>website: <span>kponky/github.com</span></p>
                                         </div>
 
                                         <div class="info-item paddings-1">
@@ -211,7 +211,7 @@
 
                             <div class="row">
                                 <div class="education paddings-1">
-                                    <h3 class="title">Education</h3>
+                                    <h3 class="title">Education/Trainings</h3>
 
                                 <!-- copying items -->
                                 
@@ -231,7 +231,7 @@
                                                         Bsc(Ed) Political Science in Education
                                                     </h4>
                                                     <p class="timeline-text">
-                                                        university of Uyo, Uyo.
+                                                        University of Uyo, Uyo.
                                                     </p>
                                                
                                                 </div>
@@ -266,7 +266,7 @@
                                            <div class="timeline-item">
                                             <div class="circle-dot"></div>
                                             <h3 class="timeline-date">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i>Nov. 2022
+                                                <i class="fa fa-calendar" aria-hidden="true"></i>Feb. 2022
                                             </h3>
 
                                             <h4 class="timeline-title">
@@ -283,7 +283,7 @@
                                             </h3>
 
                                             <h4 class="timeline-title">
-                                                Software Engineering Program
+                                                Alx Software Engineering Program
                                             </h4>
                                             <p class="timeline-text">
                                                 Algorithms and Data structures. Software design and achitecture, testing and debugging, Software development Processes <br>
@@ -312,21 +312,26 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i> 2016-2021
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i> Sept. - Nov. 2022
                                                     </h3>
 
                                                     <h4 class="timeline-title">
-                                                        Bsc(Ed) Political Science in Education
+                                                        FrontEnd Developer Intern
                                                     </h4>
                                                     <p class="timeline-text">
-                                                        University of Uyo, Uyo.
+                                                        DeVtown 
                                                     </p>
+
+                                                    <p class="timeline-text">
+                                                        
+                                                    </p>
+
                                                
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>2014-2015
+                                                        <i class="fa fa-calendar" aria-hidden="true"></i> 
                                                     </h3>
 
                                                     <h4 class="timeline-title">
@@ -414,7 +419,7 @@
                                     <i class="fas fa-mobile-alt"></i>
                                 </div>
                                 <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora inventore dignissimos beatae.</p>
+                                <p>Build webpages using HTML, CSS and Javascript</p>
                             </div>
                         </div>
                         
@@ -423,8 +428,8 @@
                                 <div class="icon">
                                     <i class="fa fa-laptop" aria-hidden="true"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora inventore dignissimos beatae.</p>
+                                <h4>Web Development</h4>
+                                <p>Writing codes and converting web designs into a professional website and products and improves websites usability.</p>
                             </div>
                         </div>
                         
@@ -433,8 +438,8 @@
                                 <div class="icon">
                                     <i class="fas fa-pallet"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora inventore dignissimos beatae.</p>
+                                <h4>Website maintenance </h4>
+                                <p>Troubleshoot coding errors, change websites layout where necessary. Perform offline and online regualr maintenance and repairs</p>
                             </div>
                         </div>
 
@@ -443,8 +448,8 @@
                                 <div class="icon">
                                     <i class="fa fa-code" aria-hidden="true"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora inventore dignissimos beatae.</p>
+                                <h4>Websites pdates </h4>
+                                <p>Updates your websites to meet the current best website practices.</p>
                             </div>
                         </div>
 
@@ -595,19 +600,19 @@
             <h4 class="contact-sub-title paddings-1">I AM VERY RESPONSIVE TO MESSAGES</h4>
 
             <!-- contact form start here -->
-            <div class="row">
+            <div class="row form" onsubmit="sendEmail(); reset" >
                 <div class="contact-form paddings-1">
                     <div class="row">
-
+                        <!-- <form> -->
                         <div class="form-item col-6 paddings-1">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Name">
+                                <input type="text" class="form-control" id="name" placeholder="Name" required>
                             </div>
                         </div>
 
                         <div class="form-item col-6 paddings-1">
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email">
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
                             </div>
                         </div>
 
@@ -615,24 +620,26 @@
                        <div class="row">
                         <div class="form-item col-12 paddings-1">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Subject">
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
                             </div>
                         </div>                       
                        </div>
                        <div class="row">
                         <div class="form-item col-12 paddings-1">
                             <div class="form-group">
-                                <textarea name="" id="" class="form-control" placeholder="Message"></textarea>
+                                <textarea name="" id="message" class="form-control" placeholder="Message"></textarea>
                             </div>
                         </div>                       
                        </div>
                        <div class="row">
                         <div class="form-item col-12 paddings-1">
                             <div class="form-group">
-                                <button type="submit" class="btn"> Send Message</button>
+                                <button type="submit" class="btn" id="btn-submit"> Send Message</button>
+                                <!-- <button type="submit" onclick="SubmitEvent()" class="btn" id="btn-submit"> Send Message</button> -->
                             </div>
                         </div>                       
                        </div>
+                    <!-- </form> -->
                 </div>
             </div>
             <!-- contact form ends here -->
@@ -671,7 +678,7 @@
 
 
 
-
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
      integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" 
      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
