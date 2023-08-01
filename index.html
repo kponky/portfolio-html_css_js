@@ -23,6 +23,15 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
 </head>
 
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+ <script type="text/javascript">
+   (function(){
+      emailjs.init("2dM2RY7EmyyaECcBD");
+   })();
+</script> 
+
 <body>
     <div class="main-container">
         <div class="side-bar">
@@ -55,7 +64,9 @@
                             <h3 class="my-profession">I'm a <span class="typing">web designer</span></h3>
                             <p>I am a passionate front-end developer with expertize in tools and technologies like Html,
                                 CSS3, Bootstrap, React, Tailwind, Git and GitHub etc. </p>
-                            <a href="# " class="btn">Download Cv</a>
+                                <!-- <a href="Abasz CV 2023.pdf" download>cv</a> -->
+
+                            <a href="Abasz CV 2023.pdf" download  class="btn">Download Cv</a>
                         </div>
 
                         <div class="home-img paddings-1">
@@ -83,13 +94,10 @@
                                 <div class="about-me-text paddings-1">
                                     <h3>I am Abasi-ikponke Asuquo a <span> Web Developer</span></h3>
                                     <p>A.A is a solution-focused and a passionate frontend developer based in Nigeria,
-                                        skilled in software development.
-                                        She specializes in creating intuitive and user-friendly interfaces, developing
-                                        responsive web applications and optimizing
-                                        performance through efficient implementation using modern technologies. I thrive
-                                        in colloborative environements and enjoy
-                                        working with multi-tasking and multi-disciplinary teams to solve complex
-                                        problems, deliver quality and onnovative solutions.
+                                        skilled in software development. She specializes in creating intuitive and user-friendly interfaces, developing
+                                        responsive web applications and optimizing performance through efficient implementation
+                                        using modern technologies. I thrive in colloborative environments and enjoy working with
+                                        multi-tasking and multi-disciplinary teams to solve complex problems, deliver quality and innovative solutions.
                                     </p>
 
                                 </div>
@@ -98,13 +106,13 @@
                             <div class="row">
                                 <div class="personal-info paddings-1">
                                     <div class="row">
-                                        <div class="info-item paddings-1">
+                                        <!-- <div class="info-item paddings-1">
                                             <p>Birthday: <span>7 September</span></p>
-                                        </div>
+                                        </div> -->
 
-                                        <div class="info-item paddings-1">
+                                        <!-- <div class="info-item paddings-1">
                                             <p>Age: <span>25</span></p>
-                                        </div>
+                                        </div> -->
 
                                         <div class="info-item paddings-1">
                                             <p>website: <span>kponky/github.com</span></p>
@@ -419,7 +427,7 @@
                                     <i class="fas fa-mobile-alt"></i>
                                 </div>
                                 <h4>Web Design</h4>
-                                <p>Build webpages using HTML, CSS and Javascript</p>
+                                <p>Build webpages using HTML, CSS and Javascript. Produce clean, efficient code based on specifications.</p>
                             </div>
                         </div>
                         
@@ -439,7 +447,7 @@
                                     <i class="fas fa-pallet"></i>
                                 </div>
                                 <h4>Website maintenance </h4>
-                                <p>Troubleshoot coding errors, change websites layout where necessary. Perform offline and online regualr maintenance and repairs</p>
+                                <p>Troubleshoot coding errors, change websites layout where necessary. Perform offline aand online regualar maintenance and repairs.</p>
                             </div>
                         </div>
 
@@ -448,8 +456,8 @@
                                 <div class="icon">
                                     <i class="fa fa-code" aria-hidden="true"></i>
                                 </div>
-                                <h4>Websites pdates </h4>
-                                <p>Updates your websites to meet the current best website practices.</p>
+                                <h4>Websites Updates </h4>
+                                <p>Updates your websites to meet the current best website practices. Recommend and execute improvements in your sites and also verify and deploy programs and systems. </p>
                             </div>
                         </div>
 
@@ -458,8 +466,8 @@
                                 <div class="icon">
                                     <i class="fa fa-bullhorn" aria-hidden="true"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora inventore dignissimos beatae.</p>
+                                <h4>Web Evaluation</h4>
+                                <p>Weigh up the process to rationally assess the effictiveness and benefits of your site which are expected to improve your organizations or business value.</p>
                             </div>
                         </div>
 
@@ -468,8 +476,9 @@
                                 <div class="icon">
                                   <i class="fa fa-search" aria-hidden="true"></i>
                                 </div>
-                                <h4>Web Design</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora inventore dignissimos beatae.</p>
+                                <h4>Technical Documentation</h4>
+                                <p>I create technical doucumention for reference and reporting. Explain the features and fuctionality, designs, components setup and operations of your product
+                                </p> 
                             </div>
                         </div>
                        </div>
@@ -600,13 +609,13 @@
             <h4 class="contact-sub-title paddings-1">I AM VERY RESPONSIVE TO MESSAGES</h4>
 
             <!-- contact form start here -->
-            <div class="row form" onsubmit="sendEmail(); reset" >
+            <div class="row form">
                 <div class="contact-form paddings-1">
                     <div class="row">
                         <!-- <form> -->
                         <div class="form-item col-6 paddings-1">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="name" placeholder="Name" required>
+                                <input type="text" class="form-control" id ="name" placeholder="Name" required>
                             </div>
                         </div>
 
@@ -634,14 +643,22 @@
                        <div class="row">
                         <div class="form-item col-12 paddings-1">
                             <div class="form-group">
-                                <button type="submit" class="btn" id="btn-submit"> Send Message</button>
+                                <button type="submit" class="btn" id="btn-submit" onclick="sendMail, popup ('')"> Send Message</button>
                                 <!-- <button type="submit" onclick="SubmitEvent()" class="btn" id="btn-submit"> Send Message</button> -->
+                                
                             </div>
                         </div>                       
                        </div>
+                      
                     <!-- </form> -->
                 </div>
             </div>
+            <div class="pop-up">
+                <img src="images/cheeck_icon-removebg-preview.png" alt="">
+                <h2>Thank You!</h2>
+                <p>Your message has been successfully sent!</p>
+                <button type="button" id="closePopup" onclick="closePopup"> OK </button>
+            </div>    
             <!-- contact form ends here -->
         </div>
        
@@ -678,7 +695,7 @@
 
 
 
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"
      integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" 
      crossorigin="anonymous" referrerpolicy="no-referrer"></script>

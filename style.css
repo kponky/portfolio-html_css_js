@@ -1,7 +1,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 :root{
-    --bg--white-900: #f2f2fc;
-    --bg--white-100: #fdf9ff;
+    --bg--white-900: #e0e0fb;
+    --bg--white-100: #f7eefd;
     --bg--white-50: #e8dfec;
     --text--white-900: #302e4d;
     --text--white-700: #504e70;
@@ -794,13 +794,69 @@ h3.my-profession{
 
 .contact .contact-form .form-item textarea.form-control{
     height: 150px;
+    margin-bottom: 60px;
 
 }
 
 .contact .contact-form .btn{
     height: 50px;
     padding: 0 50px ;
+
    }
+
+   .contact .pop-up{
+    width:300px;
+    height: 250px;
+    /* margin-bottom: 90px; */
+    background-color: var(--bg--white-100);
+    border-radius: 10px;
+    position: absolute;
+    /* top: 100%; */
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 10px 10px;
+    color: var(--text--white-900);
+    visibility: hidden;
+   }
+
+   .contact .pop-up img{
+    width: 70px; 
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.2);
+   }
+
+   .contact .pop-up h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+
+   }
+
+   .contact .pop-up button{
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 0;
+    background: var(--skin-color );
+    color: #fff;
+    border: none;
+    outline: non;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+ 
+ }
+
+
+
+
+   
+
+
+
+
 
    @media (max-width:1199px)
    {

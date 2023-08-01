@@ -109,24 +109,63 @@ function sideBarSectionTogglerBtn(){
 // send email js
 
 
-let btn = document.getElementById("btn-submit"); 
-btn.addEventListener("click", function(e){
-    e.preventDefault()
-    let name = getElementById("name").value
-    let email = getElementById("email").value
-    let subject = getElementById("subject").value
-    let message = getElementById("message").value
+// let btn = document.getElementById("btn-submit"); 
+// btn.addEventListener("click", function(e){
+//     e.preventDefault()
+//     let name = getElementById("name").value
+//     let email = getElementById("email").value
+//     let subject = getElementById("subject").value
+//     let message = getElementById("message").value
 
-    let body = 'name: '+name + '<br/> email:' + email + '<br/> subject: ' +subject + '<br/> message: '+ message;
+//     let body = 'name: '+name + '<br/> email:' + email + '<br/> subject: ' +subject + '<br/> message: '+ message;
 
-    Email.send({
-        SecureToken : " eee9c013-e8b3-4298-b478-af8fe338b5a8",
-        To : 'ikponkedet@gmail.com',
-        From : "ikponkeedet84@gmail.com",
-        Subject : "Contact Message",
-        Body : "body"
-    }).then(
-      message => alert(message)
-    );
+//     Email.send({
+//         SecureToken : "eee9c013-e8b3-4298-b478-af8fe338b5a8",
+//         To : 'ikponkedet@gmail.com',
+//         From : "ikponkeedet84@gmail.com",
+//         Subject : "Contact Message",
+//         Body : "body"
+//     }).then(
+//       message => alert(message)
+//     );
     
-})
+// })
+
+
+
+
+function sendMail(){
+    let mailDetails = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value
+  
+    };
+
+
+
+
+const serviceID = "service_84lqw19 ";
+const templateID = "template_0aue6wb";
+
+emailjs.send(serviceID, templateID, mailDetails)
+.then(
+    res => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("message").value = "";
+
+        console.log(res);
+        alert("your message as being sent")
+        
+    }
+
+)
+.catch(err =>console.log(err));
+
+}
+
+let popup = document.getElementById("popup");
+// function openu
